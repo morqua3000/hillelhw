@@ -1,0 +1,64 @@
+body{
+    background-color: rgb(171, 126, 121);
+}
+h1{
+    font-family: 'Century', Courier, monospace;
+    text-align: center;
+}
+#superId{
+    font-family: 'Sofia', Courier, monospace;
+    font-size: 50px;
+    font-style: italic;
+    text-align: center;
+}
+.superClass{
+    color: red;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+h2, .superPuperClass{
+    font-family: 'Century', Times, serif;
+    text-align: center;
+}
+.text{
+    text-indent: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.italian{
+    font-weight: bold;
+    font-style: italic;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#red{
+    color: red;
+}
+#orange{
+    color: orange;
+}
+#yellow{
+    color: yellow;
+}
+#green{
+    color: #56E34B;
+}
+#lblue{
+    color:aqua;
+}
+#dblue{
+    color: blue;
+}
+#purple{
+    color: purple;
+}
+#pink{
+    color: #FF6EBA;
+}
+#brown{
+    color: brown;
+}
+#white{
+    color: white;
+}
