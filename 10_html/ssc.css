@@ -1,0 +1,170 @@
+body{
+    background-color: #F9F9F9;
+}
+div{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a{
+    color: #19477D;
+    text-decoration: none;
+}
+/*up*/
+.box{
+    width: 1920px;
+    height: 700px;
+    border: 1px solid #EEEFF1;
+    background-color: #EEEFF1;
+}
+.menu{
+    width: 611px;
+    margin: 79px 910px 605px 399px;
+    position: absolute;
+    line-height: 3;
+    font-size: larger;
+    line-height: 26px;
+    letter-spacing: 0.1em;
+}
+.container{
+    margin: 257px 980px 398px 399px;
+}
+.text{
+    width: 540px;
+    height: 67px;
+    position: absolute;
+    margin: 362px 980px 271px 400px;
+    color: #727272;
+}
+.boxjr{
+    position: absolute;
+    width: 225px;
+    height: 65px;
+    margin: 494px 1296px 141px 399px;
+    background-color: #34547A;
+    font-size: larger;
+    color: white;
+    border:#34547A;
+}
+.boxjr:hover{
+    background-color: #3E628C;
+}
+.boxjr:active{
+    background-color: #19477D;
+}
+/*about*/
+.about{
+    text-align: center;
+    width: 540px;
+    height: 147px;
+    margin: 112px 690px 100px 690px;
+}
+.trxt{
+    color: #727272;
+}
+/*video*/
+.video{
+    width: 1920px;
+    height: 1004px;
+}
+.how{
+    position: absolute;
+    width: 540px;
+    height: 147px;
+    text-align: center;
+    margin: 100px 690px 757px;
+}
+.actual{
+    position: absolute;
+    margin: 304px 405px 100px;
+}
+/*footer*/
+.boxsr{
+    width: 1920px;
+    height: 151px;
+    background-color: #34547A;
+    color: white;
+}
+.vasya{
+    position: absolute;
+    padding-top: 30px;
+    padding-left: 406px;
+}
+.pupkin{
+    position: absolute;
+    padding-top: 90px;
+    padding-left: 406px;
+}
+
+/*hoo boy*/
+.carton{
+    width: 1920px;
+    height: 250px;
+    background-color: #34547A;
+    border: 1px solid #34547A;
+    color: white;
+}
+.item{
+    position: absolute;
+    width: 141px;
+    height: 50px;
+    margin-top: 100px;
+    margin-left: 409px;
+}
+.item2{
+    position: absolute;
+    width: 141px;
+    height: 50px;
+    margin-top: 100px;
+    margin-left: 595px;
+}
+.item3{
+    position: absolute;
+    width: 141px;
+    height: 50px;
+    margin-top: 100px;
+    margin-left: 785px;
+}
+.item4{
+    position: absolute;
+    width: 141px;
+    height: 50px;
+    margin-top: 100px;
+    margin-left: 975px;
+}
+.item5{
+    position: absolute;
+    width: 141px;
+    height: 50px;
+    margin-top: 100px;
+    margin-left: 1165px;
+}
+.item6{
+    position: absolute;
+    width: 141px;
+    height: 50px;
+    margin-top: 100px;
+    margin-left: 1355px;
+}
+.itempic{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+.itemtext{
+    position: absolute;
+    width: 71px;
+    height: 44px;
+    padding-left: 60px;
+}
+.itemtext1{
+    position: absolute;
+    width: 36px;
+    height: 19px;
+}
+.itemtext2{
+    position: absolute;
+    width: 71px;
+    height: 15px;
+}
+*{
+    box-sizing: border-box;
+}
