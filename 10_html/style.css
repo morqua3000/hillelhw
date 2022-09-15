@@ -1,0 +1,114 @@
+body{
+    background-color: #F9F9F9;
+}
+div{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a{
+    color: #19477D;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+.box{
+    background-color: #EEEFF1;
+    padding: 75px;
+}
+.menu{
+    padding: 30px;
+    font-size: larger;
+    letter-spacing: 3px;
+    line-height: 26px;
+}
+.menu a{
+    padding-left: 26px;
+}
+.container{
+    margin: 0 auto;
+    padding: 50px 50px;
+}
+.text{
+    max-width: 540px;
+    color: #727272;
+    padding: 0 50px;
+}
+.boxjr{
+    max-width: 225px;
+    height: 60px;
+    margin: 50px;
+    background-color: #34547A;
+    color: white;
+    border:#34547A;
+}
+.boxjr:hover{
+    background-color: #3E628C;
+}
+.boxjr:active{
+    background-color: #19477D;
+}
+.about{
+    text-align: center;
+}
+.trxt{
+    color: #727272;
+    max-width: 540px;
+    display: inline-block;
+}
+
+.carton{
+    padding: 50px;
+    background-color: #34547A;
+    color: white;
+    text-align: center;
+}
+.item{
+    max-width: 141px;
+    vertical-align: middle;
+    display: inline-block;
+}
+.item + .item{
+    margin-left: 20px;
+}
+.itempic{
+    max-width: 50px;
+    vertical-align:middle;
+}
+.itemtext{
+    max-width: 71px;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 5px;
+}
+.itemtext1{
+    max-width: 36px;
+    font-weight: 700;
+}
+.itemtext2{
+    max-width: 71px;
+}
+
+.video{
+    max-width: 1920px;
+}
+.actual{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.boxsr{
+    padding: 20px;
+    background-color: #34547A;
+    color: white;
+}
+.vasya{
+    padding-left: 50px;
+}
+.pupkin{
+    font-size: large;
+    font-weight: 600;
+}
+*{
+    box-sizing: border-box;
+}
