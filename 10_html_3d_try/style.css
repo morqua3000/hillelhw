@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F9F9F9;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a{
+    color: #19477D;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #8ebaec;
+}
+
+a:active{
+    color: #0d2b4d;
+}
+
+li{
+    list-style: none;
+}
+
+
+.box{
+    background-color: #EEEFF1;
+    padding: 75px;
+}
+
+.menu{
+    padding: 30px;
+    font-size: larger;
+    letter-spacing: 3px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+
+.menu a{
+    margin-left: 26px;
+}
+
+.container{
+    padding: 50px 50px;
+}
+
+.font{
+    font-size: 48px;
+    font-weight: 500;
+}
+.font2{
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.text{
+    max-width: 540px;
+    color: #727272;
+    padding: 0 50px;
+}
+
+
+.boxjr{
+    max-width: 225px;
+    height: 60px;
+    margin: 50px;
+    background-color: #34547A;
+    color: white;
+    border:#34547A;
+    text-transform: uppercase;
+    padding: 0 41px;
+}
+.boxjr:hover{
+    background-color: #3E628C;
+}
+.boxjr:active{
+    background-color: #19477D;
+}
+
+
+.about{
+    text-align: center;
+}
+
+.trxt{
+    color: #727272;
+    max-width: 540px;
+    display: inline-block;
+}
+
+
+.carton{
+    padding: 50px;
+    background-color: #34547A;
+    color: white;
+    text-align: center;
+}
+
+.item{
+    max-width: 141px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.item + .item{
+    margin-left: 20px;
+}
+
+.itempic{
+    max-width: 50px;
+    vertical-align:middle;
+}
+
+.itemtext{
+    max-width: 71px;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 5px;
+}
+
+.itemtext1{
+    max-width: 36px;
+    font-weight: 700;
+}
+
+.itemtext2{
+    max-width: 71px;
+}
+
+
+
+.actual{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.boxsr{
+    padding: 20px;
+    background-color: #34547A;
+    color: white;
+}
+
+.vasya{
+    padding-left: 50px;
+    font-size: large;
+    font-weight: 500;
+}
+
+.pupkin{
+    padding-left: 50px;
+}
