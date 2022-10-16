@@ -1,0 +1,183 @@
+@font-face {
+    font-family: 'Graphik LCG';
+    src: url('./fonts/GraphikLCG-Regular.woff2') format('woff2'),
+        url('/fonts/GraphikLCG-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Graphik LCG';
+    src: url('./fonts/GraphikLCG-Semibold.woff2') format('woff2'),
+        url('./fonts/GraphikLCG-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+body{
+    font-family: 'Graphik LCG', 'Arial', 'Helvetica', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    color: #FF6336;
+}
+a:active{
+    color: #C60200;
+}
+li{
+    list-style: none;
+    padding-top: 15px;
+}
+hr{
+    width: 90%;
+    color: #000;
+    height: 1px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+}
+.main{
+    flex-grow: 1;
+}
+
+/*nav*/
+.menu{
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #AFAFAF;
+    align-items: center;
+}
+.menu a{
+    margin-left: 51px;
+}
+.icon{
+    vertical-align: middle;
+}
+
+.button{
+    padding: 16px 36px;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #FF6336;
+    border: solid 1px #FF6336;
+    color: white;
+}
+.button--white{
+    background-color: white;
+    border: solid 1px #AFAFAF;
+    color: black;
+}
+.button:hover{
+    background-color: #ffc163;
+    border: solid 1px #ffc163;
+}
+.button:active{
+    background-color: #c64f00;
+    border: solid 1px #c64f00;
+}
+
+/*main*/
+.humbox{
+    padding: 129px 75px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.humbox--rev{
+    flex-direction: row-reverse;
+}
+
+.text{
+    font-size: 65px;
+    font-weight: 600;
+    line-height: 1.07;
+}
+.text2{
+    font-size: 25px;
+    line-height: 1.4;
+    padding: 51px 68px 51px 0;
+}
+
+.redbox{
+    background-color: #FF9C7D;
+    padding: 108px 0;
+}
+.text3{
+    text-align: center;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 1.2;
+    max-width: 720px;
+    margin: 0 auto 82px;
+}
+.logos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.pad{
+    padding-top: 25px;
+}
+
+.padding{
+    padding: 0 138px;
+}
+.text4{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+
+/*footer*/
+.bike{
+    padding: 28px 0;
+}
+.footbg{
+    background-color: #EEEEEE;
+}
+.foot{
+    display: flex;
+    justify-content: space-around;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    max-width: 300px;
+    padding: 95px 0;
+}
+.text5{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.25;
+}
+.text6{
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.footcr{
+    display: flex;
+    justify-content: space-between;
+    padding: 52px 5%;
+}
+.icon2{
+    vertical-align: middle;
+    padding-right: 14px;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
