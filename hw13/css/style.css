@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "Graphik LCG";
+  src: url("/fonts/GraphikLCG-Regular.woff2") format("woff2"), url("/fonts/GraphikLCG-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Graphik LCG";
+  src: url("/fonts/GraphikLCG-Semibold.woff2") format("woff2"), url("/fonts/GraphikLCG-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "Graphik LCG", "Arial", "Helvetica", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: #FF6336;
+}
+
+a:active {
+  color: #C60200;
+}
+
+.menu {
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #afafaf;
+  align-items: center;
+}
+.menu a {
+  margin-left: 51px;
+}
+
+.icon {
+  vertical-align: middle;
+}
+
+.button {
+  padding: 16px 36px;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: #FF6336;
+  border: 1px solid #FF6336;
+  color: #fff;
+}
+
+.button--white {
+  padding: 16px 36px;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: #fff;
+  border: 1px solid #afafaf;
+  color: #000;
+}
+
+.button:hover {
+  background-color: #ffc163;
+  border: 1px solid #ffc163;
+}
+
+.button:active {
+  background-color: #C60200;
+  border: 1px solid #C60200;
+}
+
+/*# sourceMappingURL=style.css.map */
