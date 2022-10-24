@@ -1,0 +1,95 @@
+$primar-color: #FF6336;
+$secondary-color: #fff;
+$text-color: #000;
+$link-color: #C60200;
+$hover-color: #ffc163;
+$border: #afafaf;
+@font-face {
+    font-family: 'Graphik LCG';
+    src: url('/fonts/GraphikLCG-Regular.woff2') format('woff2'),
+        url('/fonts/GraphikLCG-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Graphik LCG';
+    src: url('/fonts/GraphikLCG-Semibold.woff2') format('woff2'),
+        url('/fonts/GraphikLCG-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+body{
+    font-family: 'Graphik LCG', 'Arial', 'Helvetica', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    color: $text-color;
+}
+a{
+    text-decoration: none;
+    color: $text-color;
+}
+a:hover{
+    color: $primar-color;
+}
+a:active{
+    color: $link-color;
+}
+
+.menu{
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $border;
+    align-items: center;
+    a{
+        margin-left: 51px;
+    }
+}
+.icon{
+    vertical-align: middle;
+}
+@mixin butt ($bg, $bord, $color){
+    padding: 16px 36px;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: $bg;
+    border: 1px solid $bord;
+    color: $color;
+}
+.button{
+    @include butt($primar-color, $primar-color, $secondary-color)
+}
+.button--white{
+    @include butt($secondary-color, $border, $text-color)
+}
+.button:hover{
+    background-color: $hover-color;
+    border: 1px solid $hover-color;
+}
+.button:active{
+    background-color: $link-color;
+    border: 1px solid $link-color;
+}
+@media (max-width: 768px){
+    .humbox{
+        flex-wrap: wrap;
+        padding: 50px;
+    }
+    .menu a{
+        margin-left: 0;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 17px;
+    }
+    nav{
+        a{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
