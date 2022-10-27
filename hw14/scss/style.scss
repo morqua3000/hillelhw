@@ -1,0 +1,274 @@
+$text-color: #fff;
+$transparent: transparent;
+$text2-color: #ED4C5C;
+$bg-color: #fafafa;
+$hover-color: #5f0912;
+$active-color: #380208;
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    color: $text2-color;
+}
+a:active{
+    color: $active-color;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 42px;
+}
+%uppercase{
+    text-transform: uppercase;
+    color: $text-color;
+}
+
+
+/*header*/
+.bg{
+    max-width: 100%;
+    background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%), url("/images/Rectangle\ 3.jpg") center no-repeat;
+    background-size: cover;
+}
+.menu{
+    @extend %uppercase;
+    a{
+        color: $text-color;
+        margin: 20px;
+    }
+    a:hover{
+        color: $hover-color;
+    }
+    a:active{
+        color: $bg-color;
+    }
+}
+@mixin texts($weight, $size, $height){
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+}
+@mixin butt ($bg, $border, $color){
+    @extend %uppercase;
+    background-color: $bg;
+    border: 1px solid $border;
+    border-radius: 6px;
+    color: $color;
+}
+.butt-transparent{
+    @include butt($transparent, $text-color, $text-color);
+    padding: 11px 29px;
+}
+.butt-color{
+    @include butt($text-color, $text-color, $text2-color);
+    padding: 17px 53px;
+}
+button:hover{
+    @include butt($hover-color, $hover-color, $text2-color);
+}
+button:active{
+    @include butt($active-color, $active-color, $text-color);
+}
+.welcome{
+    text-align: center;
+    padding: 194px 0;
+}
+.text{
+    @extend %uppercase;
+    @include texts(700, 72px, 1);
+}
+.text1{
+    color: $text-color;
+    padding: 39px 0;
+    @include texts(600, 24px, 1.5);
+}
+
+/*main*/
+.text2{
+    text-align: center;
+    padding: 63px;
+    @include texts(600, 36px, 1);
+}
+.bg2{
+    background-color: $bg-color;
+    padding-bottom: 229px;
+}
+%container{
+    display: flex;
+    justify-content: space-around;
+}
+.container{
+    @extend %container;
+}
+%boxie{
+    border-radius: 8px;
+}
+.box{
+    @extend %boxie;
+    position: absolute;
+    z-index: 100;
+    margin-top: -93px;
+    margin-left: 29px;
+    max-width: 293px;
+    background-color: $text-color;
+    text-align: center;
+    padding-bottom: 20px;
+    .text3{
+        padding: 30px
+    }
+    a{
+        color: $text2-color;
+    }
+    a:hover{
+        color: $hover-color;
+    }
+    a:active{
+        color: $active-color;
+    }
+}
+.text3{
+    @include texts(700, 18px, 1.2);
+}
+.text4{
+    @include texts(700, 14px, 1);
+    padding-bottom: 25px;
+}
+.padding{
+    padding: 0 25px 25px;
+}
+
+.container2{
+    @extend %container;
+    display: flex;
+    align-items: center;
+}
+%column{
+    display: flex;
+    flex-direction: column;
+}
+.column{
+    @extend %column;
+    max-width: 191px;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 100px;
+    .text3{
+        padding: 10px;
+    }
+}
+
+/*footer*/
+footer{
+    background-color: $bg-color;
+}
+.foot{
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+}
+
+.column2{
+    @extend %column;
+    display: flex;
+    align-items: baseline;
+    a{
+        padding-top: 11px;
+    }
+    .text3{
+        padding: 28px 0;
+    }
+}
+.facebook{
+    content: url("/images/facebook.png");
+    padding: 0 5px;
+}
+.instagram{
+    content: url("/images/instagram.png");
+    padding: 0 5px;
+}
+.twitter{
+    content: url("/images/twitter.png");
+    padding: 0 5px;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+}
+.visaver{
+    content: url("/images/verified-by-visa.png");
+    max-width: 50px;
+}
+.visa{
+    content: url("/images/Visa_Logo.png");
+    max-width: 50px;
+}
+.mc{
+    content: url("/images/Mastercard-logo.png");
+    max-width: 50px;
+}
+.mcsec{
+    content: url("/images/mastercard-secure.png");
+    max-width: 50px;
+}
+.copyright{
+    padding-left: 11%;
+}
+
+@media (max-width: 1056px){
+    %container{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .container{
+        .cont{
+            padding-bottom: 110px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .box{
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        margin-top: 150px;
+        padding-bottom: 0;
+    }
+    .bg2{
+        padding-bottom: 63px;
+    }
+    .foot{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 768px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        font-size: 24px;
+        
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .welcome{
+        padding: 20px;
+    }
+    .text{
+        font-size: 40px;
+    }
+    button{
+        font-size: 18px;
+    }
+}
