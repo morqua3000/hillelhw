@@ -1,0 +1,47 @@
+let year = prompt("В якому році Ви народилися?", "");
+let city = prompt("В якому місті Ви живете?", "");
+let sport = prompt("Ваш улюблений спорт?", "");
+const age = 2022 - year;
+var resultAge;
+if (year == null) {
+    resultAge = ("Шкода, що Ви не захотіли ввести свою дату народження.");
+} else {
+    resultAge = ("Вам " + age + " років.");
+}
+var resultCity;
+if (city == null) {
+    resultCity = ("Шкода, що Ви не захотіли ввести своє місто.");
+} else{
+    switch (city){
+        case "Київ":
+            resultCity = ("Ви живете у столиці України.");
+            break;
+        case "Вашингтон":
+            resultCity = ("Ви живете у столиці США.");
+            break;
+        case "Лондон":
+            resultCity = ("Ви живете у столиці Великобританії.");
+            break;
+        default:
+            resultCity = ("Ви живете у місті " + city + ".");
+    }
+}
+var resultSport;
+if (sport == null) {
+    resultSport = ("Шкода, що Ви не захотіли ввести свій улюблений спорт.");
+} else {
+    switch (sport){
+        case "Хокей":
+            resultSport = ("Круто! Хочете стати Вейном Ґрецкі?");
+            break;
+        case "Бейсбол":
+            resultSport = ("Круто! Хочете стати Джекі Робінсоном?");
+            break;
+        case "Крикет":
+            resultSport = ("Круто! Хочете стати Жаком Каллісом?");
+            break;
+        default:
+            resultSport = ("Ваш улюблений спорт це " + sport + ".")
+    }
+}
+alert(resultAge + "\n" + resultCity + "\n" + resultSport);
