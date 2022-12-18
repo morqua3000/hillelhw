@@ -9,10 +9,7 @@ if (year == null) {
     resultAge = ("Вам " + age + " років.");
 }
 var resultCity;
-if (city == null) {
-    resultCity = ("Шкода, що Ви не захотіли ввести своє місто.");
-} else{
-    switch (city){
+switch (city){
         case "Київ":
             resultCity = ("Ви живете у столиці України.");
             break;
@@ -22,14 +19,14 @@ if (city == null) {
         case "Лондон":
             resultCity = ("Ви живете у столиці Великобританії.");
             break;
+        case (city = null):
+            resultCity = ("Шкода, що Ви не захотіли ввести своє місто.");
+            break;
         default:
             resultCity = ("Ви живете у місті " + city + ".");
+            break;
     }
-}
 var resultSport;
-if (sport == null) {
-    resultSport = ("Шкода, що Ви не захотіли ввести свій улюблений спорт.");
-} else {
     switch (sport){
         case "Хокей":
             resultSport = ("Круто! Хочете стати Вейном Ґрецкі?");
@@ -40,8 +37,11 @@ if (sport == null) {
         case "Крикет":
             resultSport = ("Круто! Хочете стати Жаком Каллісом?");
             break;
+        case (sport = null):
+            resultSport = ("Шкода, що Ви не захотіли ввести свій улюблений спорт.");
+            break;
         default:
-            resultSport = ("Ваш улюблений спорт це " + sport + ".")
+            resultSport = ("Ваш улюблений спорт це " + sport + ".");
+            break;
     }
-}
 alert(resultAge + "\n" + resultCity + "\n" + resultSport);
