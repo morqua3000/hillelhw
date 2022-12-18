@@ -2,13 +2,13 @@ let year = prompt("В якому році Ви народилися?", "");
 let city = prompt("В якому місті Ви живете?", "");
 let sport = prompt("Ваш улюблений спорт?", "");
 const age = 2022 - year;
-var resultAge;
+let resultAge;
 if (year == null) {
     resultAge = ("Шкода, що Ви не захотіли ввести свою дату народження.");
 } else {
     resultAge = ("Вам " + age + " років.");
 }
-var resultCity;
+let resultCity;
 switch (city){
         case "Київ":
             resultCity = ("Ви живете у столиці України.");
@@ -26,7 +26,7 @@ switch (city){
             resultCity = ("Ви живете у місті " + city + ".");
             break;
     }
-var resultSport;
+let resultSport;
     switch (sport){
         case "Хокей":
             resultSport = ("Круто! Хочете стати Вейном Ґрецкі?");
