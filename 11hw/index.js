@@ -4,5 +4,7 @@ for (var i = 0; i<lenght; i++){
     array[i] = prompt("Enter array element " + (i+1));
 }
 alert(array);
+array.sort();
+alert(array);
 array.splice(1,3);
 alert(array);
